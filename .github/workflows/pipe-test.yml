@@ -1,4 +1,4 @@
-name: Execução doos testes unitarios com jest
+name: Execução dos testes unitarios com jest
 
 on:
   push:
@@ -11,11 +11,11 @@ jobs:
 
     steps:
      - name: checkout do repositorio
-       uses:: action/checkout@v4
+       uses: action/checkout@v4
 
      - name: configurar Node.JS
-       uses: action/stup-node@v3
-       with:
+       uses: action/setup-node@v3
+       with:    
          node-version: 18
      
      - name: Instalar dependências
